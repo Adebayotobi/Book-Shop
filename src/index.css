@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes moveIn {
+    from {
+      transform: translateX(450px);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+  
+  /* Apply the animation to an element with the fadeIn class */
+
+  
+  /* Apply the animation only at the md breakpoint and above */
+  @media (min-width: 640px) {
+    .move-in {
+        animation: moveIn 0.6s ease-in-out;
+      }
+  }
